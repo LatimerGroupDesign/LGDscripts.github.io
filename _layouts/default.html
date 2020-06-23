@@ -22,8 +22,8 @@
   <body>
 
     <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: Latimer Group Design | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: Download the latest illustrator scripts now. | default: site.github.project_tagline }}</h2>
+      <h1 class="project-name">{{ Latimer Group Design | default: Latimer Group Design | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ Download the latest illustrator scripts now. | default: Download the latest illustrator scripts now. | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
@@ -34,7 +34,6 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      <img src="https://raw.githubusercontent.com/LatimerGroupDesign/Graphic-Layout-Grid/master/README%20Files/LGD%20Script%20Banner.png?token=AF4D7ZVIPV25PLHLD7MPBTS66ISFA" alt="{{ page.title | default: site.title | default: site.github.repository_name }}" width="1920" height="600" class="project-name" />
       {{ content }}
 
       <footer class="site-footer">
