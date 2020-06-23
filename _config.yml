@@ -2,4 +2,4 @@ theme: jekyll-theme-cayman
 title: Latimer Group Design
 logo: /assets/images/LGD Script Banner.png
 show_downloads: true
-github.is_project_page: true
+is_project_page: true
