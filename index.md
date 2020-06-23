@@ -1,31 +1,47 @@
-## Welcome to LGD Illustrator Scripts Home Page
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  
+  <head>
+    {% if site.google_analytics %}
+      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '{{ site.google_analytics }}');
+      </script>
+    {% endif %}
+    <meta charset="UTF-8">
 
-Below find the graphic layout procedure for Latimer Group Design. We will layout each step in the process to help you make the most out of our scripts and processes.
+{% seo %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
 
-## Graphic Layout Procedure
+  <body>
+    
+    <!-- Page banner -->
+    <header class="page-header" role="banner">
+      <!-- Company title -->
+      <h1 class="project-name">LATIMER GROUP DESIGN</h1>
+      <h2>Download The Latest Illustrator Scripts Here</h2>
+      <!-- Buttons for github site and download -->
+      <!-- <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a> -->
+      <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+      <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+    </header>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+    <!-- Page content -->
+    <main id="content" class="main-content" role="main">
+      {{ content }}
 
-```markdown
-Syntax highlighted code block
+      <footer class="site-footer">
+        <!-- Footer information -->
+        <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="https://github.com/sergiopv02"> Sergio Perez-Valentin</a>.</span>
+      </footer>
+    </main>
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Support or Contact
-
-Having trouble with our scripts? Check out our [documentation](https://github.com/LatimerGroupDesign) or [contact us](https://github.com/sergiopv02) and we’ll help you sort it out.
+  </body>
+</html>
