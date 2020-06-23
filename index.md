@@ -4,27 +4,45 @@ Below find the graphic layout procedure for Latimer Group Design. We will layout
 
 ## Graphic Layout Procedure
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 ```markdown
-Syntax highlighted code block
+• Folder and file creation.
+(screenshot)
 
-# Header 1
-## Header 2
-### Header 3
+• Message schedule preparation
+(screenshot)
 
-- Bulleted
-- List
+• Illustrator template file creation
+	(Save As…”ST_1.1_Template.ai”)
+(screenshot)
+	Artboard sizing for script
+	Text sizing for indicators
+		(Drag quick copies to check for readability of indicators)
+	Importing and binding variables
+	VectorFirst aid cleanup
+	-Save As…(”ST_1.1.ai”) to run script on
 
-1. Numbered
-2. List
+• Run Dataset script (”ST_1.1.ai”)
+	-Run dataset script
+		Select artboard spacing in in.
+		Check artboard number to message schedule quantity
+		Save file (”ST_1.1.ai”)
 
-**Bold** and _Italic_ and `Code` text
+• Run Grid layout script (same file (”ST_1.1.ai”))
+	(Shift + O) select artboard tool
+	(Cmd + A) select all artboards
+		(screenshot)
+		(script screenshot)
+	Make note of scale on exit window pop-up, click EXIT
+	Change scale of document to match in CADScale panel, select DO NOT RESIZE
+		(screenshot)
+	Save file as (“ST_1.1_Layouts.ai”)
 
-[Link](url) and ![Image](src)
+• Place titleblock symbol on “…_Layout.ai” file
+	Edit as necessary (using EDIT SYMBOL)
+	Select symbol, Cmd+X to cut, Shift+Opt+Cmd+V to paste in place on all artboards
+	Save file. (Screenshot)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Support or Contact
 
