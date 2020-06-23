@@ -34,4 +34,4 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Support or Contact
 
-Having trouble with our scripts? Check out our [documentation](https://github.com/LatimerGroupDesign) or [contact us](sergiopv02@gmail.com) and we’ll help you sort it out.
+Having trouble with our scripts? Check out our [documentation](https://github.com/LatimerGroupDesign) or [contact us](https://github.com/sergiopv02) and we’ll help you sort it out.
