@@ -2,7 +2,7 @@
 
 Below find the graphic layout procedure for Latimer Group Design. We will layout each step in the process to help you make the most out of our scripts and processes.
 
-### Graphic Layout Procedure
+## Graphic Layout Procedure
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
