@@ -1157,6 +1157,10 @@ li.list-item-container.social-icon:hover {
     text-align: justify;
   }
 
+  a.link-text.home-item-menu {
+    color: #fff;
+  }
+
   /* Interaction Elements */
 
   a.link-button.button-submit {
@@ -1228,16 +1232,36 @@ li.list-item-container.social-icon:hover {
 
   .container.container-3 {
     -ms-flex-pack: start;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .65) 100%);
+    background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .65) 100%);
+    background-image:      -o-linear-gradient(top, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .65) 100%);
+    background-image:         linear-gradient(180deg, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .65) 100%);
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    background-repeat: repeat;
 
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
        -moz-box-pack: start;
             justify-content: flex-start;
+    background-blend-mode: multiply;
   }
 
   .container.header {
     position: relative;
     background-color: #fff;
+    background-image: url('../ws_leather_2560x1440.jpg');
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    background-blend-mode: normal;
   }
 
   .container.container-stay-tuned {
@@ -1250,11 +1274,21 @@ li.list-item-container.social-icon:hover {
 
   .container.container-25 {
     min-height: 70vh;
+    border-radius: 0;
+    background-size: cover;
   }
 
   .container.container-11 {
     margin-right: 16px;
-    background-attachment: fixed, fixed;
+    background-image: url('../ws_leather_2560x1440.jpg');
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-repeat: repeat;
+
+    background-blend-mode: normal;
   }
 
   .container.css-grid-2 {
@@ -1268,10 +1302,10 @@ li.list-item-container.social-icon:hover {
   .container.container-1 {
     -ms-flex-align: center;
     background-color: rgba(31, 32, 41, .85);
-    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(29, 30, 33, .5) 100%), url('https://applemagazine.com/wp-content/uploads/2019/06/macbook-pro-2019-2-2.jpg');
-    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(29, 30, 33, .5) 100%), url('https://applemagazine.com/wp-content/uploads/2019/06/macbook-pro-2019-2-2.jpg');
-    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(29, 30, 33, .5) 100%), url('https://applemagazine.com/wp-content/uploads/2019/06/macbook-pro-2019-2-2.jpg');
-    background-image:         linear-gradient(180deg, rgba(255, 255, 255, .5) 0%, rgba(29, 30, 33, .5) 100%), url('https://applemagazine.com/wp-content/uploads/2019/06/macbook-pro-2019-2-2.jpg');
+    background-image: -webkit-linear-gradient(170deg, rgba(255, 255, 255, .5) 0%, rgba(29, 30, 33, .5) 100%), url('https://applemagazine.com/wp-content/uploads/2019/06/macbook-pro-2019-2-2.jpg');
+    background-image:    -moz-linear-gradient(170deg, rgba(255, 255, 255, .5) 0%, rgba(29, 30, 33, .5) 100%), url('https://applemagazine.com/wp-content/uploads/2019/06/macbook-pro-2019-2-2.jpg');
+    background-image:      -o-linear-gradient(170deg, rgba(255, 255, 255, .5) 0%, rgba(29, 30, 33, .5) 100%), url('https://applemagazine.com/wp-content/uploads/2019/06/macbook-pro-2019-2-2.jpg');
+    background-image:         linear-gradient(280deg, rgba(255, 255, 255, .5) 0%, rgba(29, 30, 33, .5) 100%), url('https://applemagazine.com/wp-content/uploads/2019/06/macbook-pro-2019-2-2.jpg');
     background-attachment: scroll, fixed;
     background-position: left top, center center;
     background-clip: border-box, border-box;
@@ -1284,5 +1318,29 @@ li.list-item-container.social-icon:hover {
        -moz-box-align: center;
             align-items: center;
     background-blend-mode: normal, normal;
+  }
+
+  .container.container-2 {
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
+    background-image:    -moz-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
+    background-image:      -o-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
+    background-image:         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 60%);
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
+    background-repeat: repeat;
+
+    background-blend-mode: normal;
+  }
+
+  .container.menu-bar {
+    background-color: transparent;
+  }
+
+  .container.container-6 {
+    border-left-width: 3.125rem;
+    border-left-style: solid;
   }
 }
