@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="la">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="generator" content="Site Designer 4.0.3285 - Trial Version">
+  <title>Article</title>
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/wireframe-theme.min.css">
+  <script>document.createElement( "picture" );</script>
+  <script class="picturefill" async="async" src="js/picturefill.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton%7CRoboto:300,400,500,b">
+</head>
+
+<body class="no-js">
+  <div class="container nav-container">
+    <div class="container nav-inner"><a class="glyph font-icon-link-1" href="#" data-toggle="subnav"><i class="coffeecup-icons-menu7"></i></a></div>
+    <div class="container subnav-container" data-animate="hinge-in-from-top hinge-out-from-top" data-toggler="" id="subnav">
+      <ul class="list-container menu medium-horizontal"><li class="list-item-container nav-wrapper">
+          <a class="link-text nav-item" href="index.html">HOME</a>
+        </li><li class="list-item-container nav-wrapper">
+          <a class="link-text nav-item" href="components.html">SCRIPTS</a>
+        </li><li class="list-item-container nav-wrapper">
+          <a class="link-text nav-item" href="component-info.html">PROCEDURE</a>
+        </li><li class="list-item-container nav-wrapper">
+          <a class="link-text nav-item" href="article.html">Tutorials</a>
+        </li><li class="list-item-container nav-wrapper">
+          <a class="link-text nav-item" href="contact.html">CONTACT</a>
+        </li></ul>
+    </div>
+  </div>
+  <div class="surrounding-padding-col container">
+    <article class="container one-thousand-centered-cont">
+      <div class="container article-heading">
+        <div class="container sample-43-heading-texts">
+          <p class="paragraph article-author"><span class="uppercase-p">Damien A., Jan. 1st, 2018</span></p>
+          <h2 class="article-title">Improving cycling performance: how should we spend our time and money.</h2>
+        </div>
+        <div class="container sample-43-heading-img-cont">
+          <div class="responsive-picture article-heading-img">
+            <picture><img alt="Placeholder Picture" src="./img/alvaro-bernal-21561.jpg"></picture>
+          </div>
+        </div>
+      </div>
+      <div class="container sample-43-article-body-cont">
+        <div class="container article-body-cont">
+          <p class="paragraph article-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis varius augue, id viverra nisi porta ut. Donec eu convallis nibh, tincidunt dignissim eros. Nam suscipit eros dignissim ante sagittis maximus. Cras sed vestibulum felis. Proin eu purus vestibulum, efficitur ligula ac, vestibulum metus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis fermentum nisl justo, eget rutrum urna tincidunt nec. Maecenas suscipit metus posuere aliquam pulvinar. Vestibulum at pretium ex. Duis eu malesuada tellus. Integer mollis venenatis ligula, id faucibus odio pellentesque quis. Nam eu ipsum pellentesque, pulvinar sem ut, interdum nisi. Sed placerat diam libero, sit amet luctus lectus scelerisque ut.<br><br>Sed nec convallis ipsum. Mauris posuere diam quis laoreet dapibus. Quisque ac neque aliquam, mattis massa vitae, gravida lacus. Duis interdum sem vitae neque ullamcorper, non euismod nisi finibus. Aliquam id eros vitae libero posuere vehicula a at turpis. Quisque et finibus eros. Curabitur id nisi erat. Aliquam convallis et erat et bibendum. Integer scelerisque, elit vel rutrum gravida, nisl tortor viverra sem, ut venenatis elit ligula at quam.<br></p>
+          <div class="responsive-picture sample-43-article-body-img">
+            <picture><img alt="Placeholder Picture" src="./img/josh-nuttall-305072-s.jpg"></picture>
+          </div>
+          <h4 class="article-body-h4">Heading four</h4>
+          <p class="paragraph article-body">Sed nec convallis ipsum. Mauris posuere diam quis laoreet dapibus. Quisque ac neque aliquam, mattis massa vitae, gravida lacus. Duis interdum sem vitae neque ullamcorper, non euismod nisi finibus. Aliquam id eros vitae libero posuere vehicula a at turpis. Quisque et finibus eros. &nbsp;Integer scelerisque, elit vel rutrum gravida, nisl tortor viverra sem, ut venenatis elit ligula at quam.<br><br>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Praesent consequat quam pharetra est sollicitudin, vitae euismod lectus fringilla.<br></p>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="surrounding-padding-col next-article container">
+    <div class="container six-hundred-centered-cont sample-18">
+      <h2 class="centered ultra-large light">Carbon Vs. Steel</h2><a class="link-button button turquoise" href="#">Read article</a>
+    </div>
+  </div>
+  <div class="surrounding-padding-col-low footer-copyright container">
+    <div class="container one-thousand-centered-cont">
+      <p class="paragraph footer-copyright-text">Copyright © 2018 Black Mirror Bikes, Inc.</p>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/outofview.js"></script>
+  <script src="js/what-input.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script>$(document).foundation();</script>
+<!-- SMOOTH SCROLL -->
+<script>
+$(function() {
+  $('a.smooth-scroll[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
+</body>
+
+</html>
