@@ -435,17 +435,14 @@ label.label {
 .container.surrounding-padding-col {
   -ms-flex-pack: center;
   padding: 10vw 40px;
-  background-color: transparent;
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 55%);
-  background-image:    -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 55%);
-  background-image:      -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 55%);
-  background-image:         linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 55%);
+  background-color: #000;
+  background-image: none;
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
   background-origin: padding-box;
-  background-size: auto auto;
-  background-repeat: repeat;
+  background-size: 0 0;
+  background-repeat: no-repeat;
   opacity: .96;
 
   -webkit-flex-wrap: wrap;
@@ -627,6 +624,15 @@ label.label {
 }
 
 .container.surrounding-padding-col.turquoise-breaker {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+  -ms-flex-align: center;
+  margin-top: 0;
+  padding: 0 10px;
+  max-height: 300px;
   background-color: #a0d9d5;
   background-image: none;
   background-attachment: scroll;
@@ -637,6 +643,13 @@ label.label {
   background-repeat: no-repeat;
 
   background-blend-mode: normal;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
 }
 
 .container.newsletter-form-content-cont.one-thousand-centered-cont {
@@ -668,7 +681,7 @@ label.label {
 
 .container.footer-copyright.surrounding-padding-col-low {
   margin-top: 0;
-  background-color: #111;
+  background-color: #000;
 }
 
 .container.footer-contact-info.surrounding-padding-col {
@@ -1282,6 +1295,61 @@ label.label {
   background-repeat: repeat;
 
   background-blend-mode: normal;
+}
+
+.container.sd-four-cols {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+  padding-right: 0;
+  padding-left: 0;
+  max-width: 1800px;
+}
+
+.container.container-11 {
+  display: block;
+  margin: 5px 10px;
+  padding: 5px 0;
+  min-width: 100px;
+  min-height: 100px;
+  max-width: none;
+  max-height: none;
+  width: 400px;
+  height: 200px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+}
+
+.container.container-12 {
+  margin: 5px 10px;
+  min-width: 100px;
+  min-height: 100px;
+  width: 400px;
+  height: 200px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+}
+
+.container.container-13 {
+  margin: 5px 10px;
+  min-width: 100px;
+  min-height: 100px;
+  width: 400px;
+  height: 200px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+}
+
+.container.container-14 {
+  margin: 5px 10px;
+  min-width: 100px;
+  min-height: 100px;
+  width: 400px;
+  height: 200px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
 }
 
 .link-container.sample-60-advanced-bt {
@@ -2287,7 +2355,7 @@ div.responsive-picture.picture-1:hover {
     margin-top: 0vh;
     padding-top: 8vw;
     padding-bottom: 8vw;
-    background-color: #fff;
+    background-color: #000;
   }
 
   .container.twelve-hundred-centered-cont {
@@ -2651,6 +2719,15 @@ div.responsive-picture.picture-1:hover {
     min-width: 300px;
   }
 
+  /* Interaction Elements */
+
+  a.link-button.bike-version-bt.button {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: block;
+  }
+
   /* Layout Elements */
 
   .container.full-width-col.sample-4 {
@@ -2659,13 +2736,17 @@ div.responsive-picture.picture-1:hover {
     display:    -moz-box;
     display: -ms-flexbox;
     display:         flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    min-height: 54vh;
     background-color: #000;
     background-image: url('../Script%20Bay%20Visual%20Zoom%20Out.png');
     background-attachment: scroll;
-    background-position: left -180px;
+    background-position: center -110px;
     background-clip: border-box;
     background-origin: padding-box;
-    background-size: auto auto;
+    background-size: 75% 155%;
     background-repeat: no-repeat;
 
     background-blend-mode: normal;
@@ -2714,12 +2795,12 @@ div.responsive-picture.picture-1:hover {
     -ms-flex-align: center;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    background-image: url('../test.png');
+    background-image: none;
     background-attachment: scroll;
-    background-position: right center;
+    background-position: left top;
     background-clip: border-box;
     background-origin: padding-box;
-    background-size: 50% 500%;
+    background-size: 0 0;
     background-repeat: no-repeat;
 
     -webkit-box-align: center;
@@ -2734,5 +2815,49 @@ div.responsive-picture.picture-1:hover {
 
   .container.one-thousand-centered-cont {
     min-width: 300px;
+  }
+
+  .container.surrounding-padding-col {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+    background-color: #000;
+  }
+
+  .container.container-6 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+    min-width: 600px;
+    min-height: 620px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+  }
+
+  .container.container-9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+    margin-bottom: 20px;
+    min-width: 600px;
+    min-height: 300px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+  }
+
+  .container.container-10 {
+    min-width: 600px;
+  }
+
+  .container.welcome-section {
+    background-color: #dcdcdc;
   }
 }
