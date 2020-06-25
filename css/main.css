@@ -383,6 +383,13 @@ label.label {
   min-height: auto;
   max-width: none;
   background-color: #f2f2f2;
+  background-image: url('../Tutorial%20Backplate.png');
+  background-attachment: fixed;
+  background-position: center center;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: repeat;
 
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -392,6 +399,7 @@ label.label {
   -webkit-box-direction: normal;
      -moz-box-orient: vertical;
      -moz-box-direction: normal;
+  background-blend-mode: normal;
 }
 
 .container.full-width-col {
@@ -1186,16 +1194,7 @@ label.label {
   display: -ms-flexbox;
   display:         flex;
   -ms-flex-pack: center;
-  padding: 10vh 40px;
-
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-          justify-content: center;
-}
-
-.container.container-3 {
-  border-left: 6.25rem solid transparent;
+  padding: 3vh 40px 0vh;
   background-image: none;
   background-attachment: scroll;
   background-position: left top;
@@ -1204,14 +1203,11 @@ label.label {
   background-size: 0 0;
   background-repeat: no-repeat;
 
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
   background-blend-mode: normal;
-}
-
-.container.container-4 {
-  position: relative;
-  top: 10px;
-  right: 0;
-  min-height: 100px;
 }
 
 .container.full-width-col.sample-4 {
@@ -1220,15 +1216,13 @@ label.label {
   display:    -moz-box;
   display: -ms-flexbox;
   display:         flex;
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 55%);
-  background-image:    -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 55%);
-  background-image:      -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 55%);
-  background-image:         linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 55%);
+  min-height: 400px;
+  background-image: url('../Script%20Bay%20Visual.png');
   background-attachment: scroll;
   background-position: left top;
   background-clip: border-box;
   background-origin: padding-box;
-  background-size: auto auto;
+  background-size: cover;
   background-repeat: repeat;
 
   -webkit-flex-wrap: wrap;
@@ -1261,6 +1255,31 @@ label.label {
   background-origin: padding-box;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+
+  background-blend-mode: normal;
+}
+
+.container.container-3 {
+  position: relative;
+  top: 100px;
+  right: 20px;
+}
+
+.container.container-1 {
+  position: relative;
+  top: auto;
+  right: 30px;
+  min-width: 200px;
+  min-height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  background-image: url('https://i.pinimg.com/originals/3f/bb/2f/3fbb2f0aa414d20476517f78061b7459.png');
+  background-attachment: scroll;
+  background-position: center center;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: repeat;
 
   background-blend-mode: normal;
 }
@@ -1486,6 +1505,108 @@ div.responsive-picture.picture-1:hover {
      -moz-transition-duration: .3s;
        -o-transition-duration: .3s;
           transition-duration: .3s;
+}
+
+@media screen and (min-width: 28.75rem) {
+  /* Layout Elements */
+
+  .container.welcome-section {
+    background-image: none;
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 0 0;
+    background-repeat: no-repeat;
+
+    background-blend-mode: normal;
+  }
+
+  .container.full-width-col.sample-4 {
+    min-height: 400px;
+    background-size: cover;
+  }
+
+  .container.container-3 {
+    position: relative;
+    top: 100px;
+    right: 50px;
+  }
+
+  .container.container-1 {
+    right: 120px;
+  }
+}
+
+@media screen and (min-width: 34.75rem) {
+  /* Layout Elements */
+
+  .container.full-width-col.sample-4 {
+    min-height: 400px;
+  }
+
+  .container.container-2 {
+    min-width: 10px;
+    max-width: 260px;
+  }
+
+  .container.container-1 {
+    right: auto;
+  }
+}
+
+@media screen and (min-width: 36.375rem) {
+  /* Layout Elements */
+
+  .container.welcome-section {
+    background-image: none;
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 0 0;
+    background-repeat: no-repeat;
+
+    background-blend-mode: normal;
+  }
+
+  .container.container-1 {
+    right: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    background-image: url('https://i.pinimg.com/originals/3f/bb/2f/3fbb2f0aa414d20476517f78061b7459.png');
+    background-attachment: scroll;
+    background-position: center center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-repeat: repeat;
+
+    background-blend-mode: normal;
+  }
+
+  .container.container-2 {
+    padding-right: 20px;
+    max-width: 290px;
+  }
+
+  .container.full-width-col.sample-4 {
+    min-height: 400px;
+    background-size: cover;
+  }
+
+  .container.container-3 {
+    position: relative;
+    top: 100px;
+    right: 80px;
+  }
 }
 
 @media screen and (min-width: 40rem) {
@@ -1848,6 +1969,58 @@ div.responsive-picture.picture-1:hover {
   .container.welcome-section {
     position: relative;
     z-index: 101;
+    padding-top: 1vh;
+    padding-bottom: 0vh;
+    background-image: none;
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 0 0;
+    background-repeat: no-repeat;
+
+    background-blend-mode: normal;
+  }
+
+  .container.container-1 {
+    right: auto;
+    min-width: 300px;
+    min-height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    background-image: url('https://i.pinimg.com/originals/3f/bb/2f/3fbb2f0aa414d20476517f78061b7459.png');
+    background-attachment: scroll;
+    background-position: center center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-repeat: repeat;
+
+    background-blend-mode: normal;
+  }
+
+  .container.container-2 {
+    position: relative;
+    top: 50px;
+  }
+
+  .container.container-3 {
+    position: relative;
+    top: 100px;
+    right: 100px;
+  }
+
+  .container.container-4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+
+  .container.full-width-col.sample-4 {
+    background-attachment: scroll;
+    background-size: cover;
   }
 
   .link-container.sample-60-advanced-bt {
@@ -1920,6 +2093,62 @@ div.responsive-picture.picture-1:hover {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 46.125rem) {
+  /* Layout Elements */
+
+  .container.welcome-section {
+    padding-top: 1vh;
+    padding-bottom: 0vh;
+    background-image: none;
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 0 0;
+    background-repeat: no-repeat;
+
+    background-blend-mode: normal;
+  }
+
+  .container.container-1 {
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    background-image: url('https://i.pinimg.com/originals/3f/bb/2f/3fbb2f0aa414d20476517f78061b7459.png');
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-repeat: repeat;
+
+    background-blend-mode: normal;
+  }
+
+  .container.container-2 {
+    padding-top: 70px;
+  }
+
+  .container.container-3 {
+    position: relative;
+    top: 100px;
+    right: 80px;
+  }
+
+  .container.container-4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+
+  .container.full-width-col.sample-4 {
+    background-size: cover;
   }
 }
 
@@ -2178,6 +2407,44 @@ div.responsive-picture.picture-1:hover {
     min-height: 50%;
   }
 
+  .container.container-1 {
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 15px;
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    background-image: url('https://i.pinimg.com/originals/3f/bb/2f/3fbb2f0aa414d20476517f78061b7459.png');
+    background-attachment: scroll;
+    background-position: center center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-repeat: repeat;
+
+    background-blend-mode: normal;
+  }
+
+  .container.welcome-section {
+    padding-top: 1vh;
+    padding-bottom: 0vh;
+  }
+
+  .container.container-2 {
+    padding-top: 70px;
+  }
+
+  .container.container-3 {
+    position: relative;
+    top: 100px;
+    right: 80px;
+  }
+
+  .container.full-width-col.sample-4 {
+    background-size: cover;
+  }
+
   .link-container.sample-60-advanced-bt {
     width: 23.5%;
     -webkit-transition-duration: .25s;
@@ -2238,6 +2505,23 @@ div.responsive-picture.picture-1:hover {
   }
 }
 
+@media screen and (min-width: 71.125rem) {
+  /* Layout Elements */
+
+  .container.welcome-section {
+    padding-top: 1vh;
+    padding-bottom: 0vh;
+  }
+
+  .container.container-1 {
+    min-width: 400px;
+    min-height: 400px;
+    max-width: 400px;
+    max-height: 400px;
+    background-size: cover;
+  }
+}
+
 @media screen and (min-width: 72.625rem) {
   /* Text Elements */
 
@@ -2289,60 +2573,8 @@ div.responsive-picture.picture-1:hover {
   }
 
   .container.container-2 {
-    padding-top: 115px;
-  }
-
-  .container.container-6 {
-    justify-self: center;
-  }
-
-  .container.container-3 {
-    position: relative;
-    top: 10%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display:    -moz-box;
-    display: -ms-flexbox;
-    display:         flex;
-    min-width: 10px;
-    min-height: 400px;
-    background-image: url('../Screen%20Shot%202020-06-24%20at%203.17.19%20PM.png');
-    background-attachment: scroll;
-    background-position: left top;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-size: 70% 100%;
-    background-repeat: no-repeat;
-
-    background-blend-mode: normal;
-  }
-
-  .container.container-4 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display:    -moz-box;
-    display: -ms-flexbox;
-    display:         flex;
-    -ms-flex-align: center;
-
-    justify-self: center;
-    grid-area: auto / auto / auto / auto;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-            align-items: center;
-  }
-
-  .container.container-5 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display:    -moz-box;
-    display: -ms-flexbox;
-    display:         flex;
-    min-width: 10px;
-    min-height: 0;
-    max-width: 200.6%;
-    max-height: 100%;
+    padding-top: 70px;
+    max-width: 400px;
   }
 
   .container.full-width-col.sample-4 {
@@ -2357,16 +2589,13 @@ div.responsive-picture.picture-1:hover {
     min-width: 10px;
     min-height: 50vh;
     max-width: 100%;
-    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 50%);
-    background-image:    -moz-linear-gradient(left, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 50%);
-    background-image:      -o-linear-gradient(left, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 50%);
-    background-image:         linear-gradient(90deg, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 50%);
+    background-image: url('../Script%20Bay%20Visual%20Zoom%20Out.png');
     background-attachment: scroll;
-    background-position: left top;
+    background-position: center center;
     background-clip: border-box;
     background-origin: padding-box;
-    background-size: auto auto;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     background-blend-mode: normal;
     -webkit-box-orient: horizontal;
@@ -2395,42 +2624,115 @@ div.responsive-picture.picture-1:hover {
        -moz-box-ordinal-group: 1;
             order: 0;
   }
+
+  .container.container-3 {
+    position: relative;
+    top: 80px;
+    right: -50%;
+  }
+
+  .container.container-5 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+    min-width: 10px;
+    min-height: 0;
+    max-width: 200.6%;
+    max-height: 100%;
+  }
 }
 
 @media screen and (min-width: 85.875rem) {
+  /* Text Elements */
+
+  p.paragraph.footer-copyright-text {
+    min-width: 300px;
+  }
+
   /* Layout Elements */
 
-  .container.container-3 {
-    -ms-flex-pack: center;
-    -ms-flex-align: center;
-    margin-top: 14px;
-    padding-top: 0;
-    min-height: 400px;
-    max-height: 500%;
-    background-size: 70% 100%;
+  .container.full-width-col.sample-4 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+    background-color: #000;
+    background-image: url('../Script%20Bay%20Visual%20Zoom%20Out.png');
+    background-attachment: scroll;
+    background-position: left -180px;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: auto auto;
     background-repeat: no-repeat;
 
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-       -moz-box-pack: center;
-            justify-content: center;
+    background-blend-mode: normal;
+  }
+
+  .container.heading-right-cont {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+  }
+
+  .container.container-3 {
+    top: 0;
+    right: 20%;
+  }
+
+  .container.container-2 {
+    padding-top: 50px;
+    padding-right: 0;
+    padding-left: 0;
+    max-width: 500px;
+  }
+
+  .container.basic.sample-7-pricing-col {
+    margin-right: 35px;
+    padding-right: 0;
+  }
+
+  .container.container-7 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .container.regular.sample-7-pricing-col {
+    margin-left: 35px;
+  }
+
+  .container.bike-versions-cont.one-thousand-centered-cont {
+    max-width: 1200px;
+  }
+
+  .container.footer-copyright.surrounding-padding-col-low {
+    display: block;
+    -ms-flex-align: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    background-image: url('../test.png');
+    background-attachment: scroll;
+    background-position: right center;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 50% 500%;
+    background-repeat: no-repeat;
+
     -webkit-box-align: center;
     -webkit-align-items: center;
        -moz-box-align: center;
             align-items: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-            align-content: center;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+            align-content: flex-start;
+    background-blend-mode: normal;
   }
 
-  .container.container-4 {
-    min-height: 400px;
-  }
-
-  .container.full-width-col.sample-4 {
-    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 55%);
-    background-image:    -moz-linear-gradient(left, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 55%);
-    background-image:      -o-linear-gradient(left, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 55%);
-    background-image:         linear-gradient(90deg, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 55%);
+  .container.one-thousand-centered-cont {
+    min-width: 300px;
   }
 }
