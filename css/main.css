@@ -401,8 +401,9 @@ a.link-button.button-link-1 {
   top: 40px;
   right: -10%;
   padding: 11px 1px;
-  border: .0625rem solid #50b1a9;
-  color: #50b1a9;
+  border: .0625rem solid #000;
+  background-color: transparent;
+  color: #000;
 }
 
 a.link-button.button-link-2 {
@@ -410,8 +411,18 @@ a.link-button.button-link-2 {
   top: 10%;
   right: -10%;
   padding: 11px 1px;
-  border: .0625rem solid #50b1a9;
-  color: #50b1a9;
+  border: .0625rem solid #000;
+  color: #000;
+}
+
+a.link-button.button-link-3 {
+  position: relative;
+  top: 40px;
+  right: -10%;
+  margin-top: 0;
+  padding: 11px 1px;
+  border: .0625rem solid #000;
+  color: #000;
 }
 
 input[type=text] {
@@ -718,7 +729,7 @@ label.label {
   margin-top: 0;
   padding: 0 10px;
   max-height: 300px;
-  background-color: #a0d9d5;
+  background-color: #50b1a9;
   background-image: none;
   background-attachment: scroll;
   background-position: left top;
@@ -1382,6 +1393,15 @@ label.label {
   height: 200px;
   border-radius: 25px;
   background-color: #dcdcdc;
+  background-image: url('../Temp%20Plate.png');
+  background-attachment: scroll;
+  background-position: right bottom;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: 140% 140%;
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
 }
 
 .container.container-12 {
@@ -1392,6 +1412,15 @@ label.label {
   height: 200px;
   border-radius: 25px;
   background-color: #dcdcdc;
+  background-image: url('../Temp%20Plate.png');
+  background-attachment: scroll;
+  background-position: right bottom;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: 140% 140%;
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
 }
 
 .container.container-13 {
@@ -1402,6 +1431,15 @@ label.label {
   height: 200px;
   border-radius: 25px;
   background-color: #dcdcdc;
+  background-image: url('../Temp%20Plate.png');
+  background-attachment: scroll;
+  background-position: right bottom;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: 140% 140%;
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
 }
 
 .container.container-14 {
@@ -1412,6 +1450,15 @@ label.label {
   height: 200px;
   border-radius: 25px;
   background-color: #dcdcdc;
+  background-image: url('../Temp%20Plate.png');
+  background-attachment: scroll;
+  background-position: right bottom;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: 140% 140%;
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
 }
 
 .container.container-6 {
@@ -1431,6 +1478,13 @@ label.label {
   height: 620px;
   border-radius: 25px;
   background-color: #dcdcdc;
+  background-image: url('../Grid%20Bulder%20Plate%201.png');
+  background-attachment: scroll;
+  background-position: center center;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: 100% 100%;
+  background-repeat: repeat;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1443,6 +1497,7 @@ label.label {
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
           align-content: flex-start;
+  background-blend-mode: normal;
 }
 
 .container.container-9 {
@@ -1456,12 +1511,20 @@ label.label {
   width: 600px;
   height: 300px;
   border-radius: 25px;
-  background-color: #dcdcdc;
+  background-color: #50b1a9;
+  background-image: url('../Graphic%20Layout%20Grid%20Plate%201.png');
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
      -moz-box-orient: vertical;
      -moz-box-direction: normal;
+  background-blend-mode: normal;
 }
 
 .container.sd-two-cols {
@@ -1496,7 +1559,16 @@ label.label {
   width: 600px;
   height: 300px;
   border-radius: 25px;
-  background-color: #dcdcdc;
+  background-color: #50b1a9;
+  background-image: url('../Graphic%20Layout%20Grid%20Plate%201.png');
+  background-attachment: scroll;
+  background-position: left top;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-blend-mode: normal;
 }
 
 .container.container-7 {
