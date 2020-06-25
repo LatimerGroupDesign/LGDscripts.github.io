@@ -433,16 +433,21 @@ label.label {
 }
 
 .container.surrounding-padding-col {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
   -ms-flex-pack: center;
   padding: 10vw 40px;
-  background-color: #000;
-  background-image: none;
+  background-color: transparent;
+  background-image: url('../Script%20Menu%20Backplate.png');
   background-attachment: scroll;
-  background-position: left top;
+  background-position: center top;
   background-clip: border-box;
   background-origin: padding-box;
-  background-size: 0 0;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: repeat;
   opacity: .96;
 
   -webkit-flex-wrap: wrap;
@@ -1230,18 +1235,22 @@ label.label {
   display: -ms-flexbox;
   display:         flex;
   min-height: 400px;
-  background-image: url('../Script%20Bay%20Visual.png');
-  background-attachment: scroll;
-  background-position: left top;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: cover;
-  background-repeat: repeat;
+  background-color: #0a0a0a;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual.png');
+  background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual.png');
+  background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual.png');
+  background-image:         linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual.png');
+  background-attachment: scroll, scroll;
+  background-position: left top, left top;
+  background-clip: border-box, border-box;
+  background-origin: padding-box, padding-box;
+  background-size: auto auto, cover;
+  background-repeat: repeat, repeat;
 
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  background-blend-mode: normal;
+  background-blend-mode: normal, normal;
 }
 
 .container.container-7 {
@@ -1348,6 +1357,65 @@ label.label {
   min-height: 100px;
   width: 400px;
   height: 200px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+}
+
+.container.container-6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 600px;
+  height: 620px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+}
+
+.container.container-9 {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 600px;
+  height: 300px;
+  border-radius: 25px;
+  background-color: #f2f2f2;
+}
+
+.container.sd-two-cols {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.container.container-10 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+}
+
+.container.container-15 {
+  display: block;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  width: 600px;
+  height: 300px;
   border-radius: 25px;
   background-color: #f2f2f2;
 }
@@ -2657,15 +2725,18 @@ div.responsive-picture.picture-1:hover {
     min-width: 10px;
     min-height: 50vh;
     max-width: 100%;
-    background-image: url('../Script%20Bay%20Visual%20Zoom%20Out.png');
-    background-attachment: scroll;
-    background-position: center center;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual%20Zoom%20Out.png');
+    background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual%20Zoom%20Out.png');
+    background-image:      -o-linear-gradient(top, rgba(255, 255, 255, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual%20Zoom%20Out.png');
+    background-image:         linear-gradient(180deg, rgba(255, 255, 255, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual%20Zoom%20Out.png');
+    background-attachment: scroll, scroll;
+    background-position: left top, center center;
+    background-clip: border-box, border-box;
+    background-origin: padding-box, padding-box;
+    background-size: auto auto, cover;
+    background-repeat: repeat, no-repeat;
 
-    background-blend-mode: normal;
+    background-blend-mode: normal, normal;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
        -moz-box-orient: horizontal;
@@ -2741,15 +2812,18 @@ div.responsive-picture.picture-1:hover {
     padding-top: 0;
     min-height: 54vh;
     background-color: #000;
-    background-image: url('../Script%20Bay%20Visual%20Zoom%20Out.png');
-    background-attachment: scroll;
-    background-position: center -110px;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-size: 75% 155%;
-    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(top, rgba(10, 10, 10, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual%20Zoom%20Out.png');
+    background-image:    -moz-linear-gradient(top, rgba(10, 10, 10, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual%20Zoom%20Out.png');
+    background-image:      -o-linear-gradient(top, rgba(10, 10, 10, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual%20Zoom%20Out.png');
+    background-image:         linear-gradient(180deg, rgba(10, 10, 10, 0) 80%, rgba(10, 10, 10, 1) 100%), url('../Script%20Bay%20Visual%20Zoom%20Out.png');
+    background-attachment: scroll, scroll;
+    background-position: left top, center -120px;
+    background-clip: border-box, border-box;
+    background-origin: padding-box, padding-box;
+    background-size: auto auto, 75% 155%;
+    background-repeat: repeat, no-repeat;
 
-    background-blend-mode: normal;
+    background-blend-mode: normal, normal;
   }
 
   .container.heading-right-cont {
@@ -2826,35 +2900,15 @@ div.responsive-picture.picture-1:hover {
     padding-top: 5vw;
     padding-bottom: 3vw;
     background-color: #000;
-  }
+    background-image: url('../Script%20Menu%20Backplate.png');
+    background-attachment: scroll;
+    background-position: center top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-  .container.container-6 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display:    -moz-box;
-    display: -ms-flexbox;
-    display:         flex;
-    min-width: 600px;
-    min-height: 620px;
-    border-radius: 25px;
-    background-color: #f2f2f2;
-  }
-
-  .container.container-9 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display:    -moz-box;
-    display: -ms-flexbox;
-    display:         flex;
-    margin-bottom: 20px;
-    min-width: 600px;
-    min-height: 300px;
-    border-radius: 25px;
-    background-color: #f2f2f2;
-  }
-
-  .container.container-10 {
-    min-width: 600px;
+    background-blend-mode: normal;
   }
 
   .container.welcome-section {
