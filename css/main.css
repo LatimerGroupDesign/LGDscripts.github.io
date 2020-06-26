@@ -52,18 +52,28 @@ h2.heading-1 {
   position: relative;
   top: 10%;
   right: -10%;
+  color: #fff;
 }
 
 h2.heading-2 {
   position: relative;
   top: 10%;
   right: -10%;
+  color: #fff;
 }
 
 h2.heading-3 {
   position: relative;
   top: 10%;
   right: -10%;
+  color: #fff;
+}
+
+h2.heading-4 {
+  position: relative;
+  top: 10%;
+  right: -10%;
+  color: #fff;
 }
 
 h4 {
@@ -178,20 +188,23 @@ p.paragraph.paragraph-2 {
   top: 10%;
   right: -10%;
   width: 400px;
+  color: #dcdcdc;
 }
 
 p.paragraph.paragraph-3 {
   position: relative;
   top: 10%;
   right: -10%;
-  width: 400px;
+  width: 350px;
+  color: #dcdcdc;
 }
 
 p.paragraph.paragraph-4 {
   position: relative;
   top: 10%;
   right: -10%;
-  width: 400px;
+  width: 350px;
+  color: #dcdcdc;
 }
 
 span.text-element {
@@ -305,7 +318,7 @@ a.link-text.nav-item {
   margin-right: 0;
   margin-left: 0;
   padding: 1.5rem .636364rem 1.3rem .6363636363636364rem;
-  color: #50b1a9;
+  color: #f2f2f2;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -392,27 +405,28 @@ a.link-button.button.scroller.smooth-scroll.turquoise {
   top: auto;
   right: auto;
   padding-top: 11px;
-  padding-right: 1px;
-  padding-left: 1px;
+  padding-right: 11px;
+  padding-left: 11px;
 }
 
 a.link-button.button-link-1 {
   position: relative;
-  top: 40px;
+  top: 20px;
   right: -10%;
-  padding: 11px 1px;
-  border: .0625rem solid #000;
-  background-color: transparent;
-  color: #000;
+  padding: 11px;
+  border: .0625rem solid #fff;
+  background-color: rgba(0, 0, 0, .5);
+  color: #dcdcdc;
 }
 
 a.link-button.button-link-2 {
   position: relative;
   top: 10%;
   right: -10%;
-  padding: 11px 1px;
-  border: .0625rem solid #000;
-  color: #000;
+  padding: 11px;
+  border: .0625rem solid #fefefe;
+  background-color: rgba(0, 0, 0, .5);
+  color: #dcdcdc;
 }
 
 a.link-button.button-link-3 {
@@ -420,9 +434,10 @@ a.link-button.button-link-3 {
   top: 40px;
   right: -10%;
   margin-top: 0;
-  padding: 11px 1px;
-  border: .0625rem solid #000;
-  color: #000;
+  padding: 11px;
+  border: .0625rem solid #f3f3f3;
+  background-color: rgba(0, 0, 0, .5);
+  color: #dcdcdc;
 }
 
 input[type=text] {
@@ -729,7 +744,7 @@ label.label {
   margin-top: 0;
   padding: 0 10px;
   max-height: 300px;
-  background-color: #50b1a9;
+  background-color: #dcdcdc;
   background-image: none;
   background-attachment: scroll;
   background-position: left top;
@@ -778,10 +793,6 @@ label.label {
 .container.footer-copyright.surrounding-padding-col-low {
   margin-top: 0;
   background-color: #000;
-}
-
-.container.footer-contact-info.surrounding-padding-col {
-  background-color: #1e1e1e;
 }
 
 .container.footer-contact-info-cont {
@@ -1007,20 +1018,6 @@ label.label {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-}
-
-.container.contact-large-quote.surrounding-padding-col {
-  width: 100%;
-  background-color: #3e3e3e;
-  background-image: url('../img/josh-nuttall-286507.jpg');
-  background-attachment: fixed;
-  background-position: right center;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  background-blend-mode: multiply;
 }
 
 .container.team-lets-talk-cont {
@@ -1392,16 +1389,19 @@ label.label {
   width: 400px;
   height: 200px;
   border-radius: 25px;
-  background-color: #dcdcdc;
-  background-image: url('../Temp%20Plate.png');
-  background-attachment: scroll;
-  background-position: right bottom;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: 140% 140%;
-  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:         linear-gradient(0deg, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-attachment: scroll, scroll;
+  background-position: left top, center bottom;
+  background-clip: border-box, border-box;
+  background-origin: padding-box, padding-box;
+  background-size: auto auto, cover;
+  background-repeat: repeat, no-repeat;
 
-  background-blend-mode: normal;
+  background-blend-mode: multiply, normal;
 }
 
 .container.container-12 {
@@ -1411,16 +1411,19 @@ label.label {
   width: 400px;
   height: 200px;
   border-radius: 25px;
-  background-color: #dcdcdc;
-  background-image: url('../Temp%20Plate.png');
-  background-attachment: scroll;
-  background-position: right bottom;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: 140% 140%;
-  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:         linear-gradient(0deg, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-attachment: scroll, scroll;
+  background-position: left top, center bottom;
+  background-clip: border-box, border-box;
+  background-origin: padding-box, padding-box;
+  background-size: auto auto, cover;
+  background-repeat: repeat, no-repeat;
 
-  background-blend-mode: normal;
+  background-blend-mode: multiply, normal;
 }
 
 .container.container-13 {
@@ -1430,16 +1433,19 @@ label.label {
   width: 400px;
   height: 200px;
   border-radius: 25px;
-  background-color: #dcdcdc;
-  background-image: url('../Temp%20Plate.png');
-  background-attachment: scroll;
-  background-position: right bottom;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: 140% 140%;
-  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:         linear-gradient(0deg, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-attachment: scroll, scroll;
+  background-position: left top, center bottom;
+  background-clip: border-box, border-box;
+  background-origin: padding-box, padding-box;
+  background-size: auto auto, cover;
+  background-repeat: repeat, no-repeat;
 
-  background-blend-mode: normal;
+  background-blend-mode: multiply, normal;
 }
 
 .container.container-14 {
@@ -1449,16 +1455,19 @@ label.label {
   width: 400px;
   height: 200px;
   border-radius: 25px;
-  background-color: #dcdcdc;
-  background-image: url('../Temp%20Plate.png');
-  background-attachment: scroll;
-  background-position: right bottom;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: 140% 140%;
-  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-image:         linear-gradient(0deg, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.00.09%20PM.png');
+  background-attachment: scroll, scroll;
+  background-position: left top, center bottom;
+  background-clip: border-box, border-box;
+  background-origin: padding-box, padding-box;
+  background-size: auto auto, cover;
+  background-repeat: repeat, no-repeat;
 
-  background-blend-mode: normal;
+  background-blend-mode: multiply, normal;
 }
 
 .container.container-6 {
@@ -1477,14 +1486,17 @@ label.label {
   width: 600px;
   height: 620px;
   border-radius: 25px;
-  background-color: #dcdcdc;
-  background-image: url('../Grid%20Bulder%20Plate%201.png');
-  background-attachment: scroll;
-  background-position: center center;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: 100% 100%;
-  background-repeat: repeat;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.01.41%20PM.png');
+  background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.01.41%20PM.png');
+  background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.01.41%20PM.png');
+  background-image:         linear-gradient(0deg, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-25%20at%203.01.41%20PM.png');
+  background-attachment: scroll, scroll;
+  background-position: left top, 100px 120%;
+  background-clip: border-box, border-box;
+  background-origin: padding-box, padding-box;
+  background-size: auto auto, 120% 60%;
+  background-repeat: repeat, no-repeat;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1497,7 +1509,7 @@ label.label {
   -webkit-align-content: flex-start;
   -ms-flex-line-pack: start;
           align-content: flex-start;
-  background-blend-mode: normal;
+  background-blend-mode: multiply, normal;
 }
 
 .container.container-9 {
@@ -1511,20 +1523,23 @@ label.label {
   width: 600px;
   height: 300px;
   border-radius: 25px;
-  background-color: #50b1a9;
-  background-image: url('../Graphic%20Layout%20Grid%20Plate%201.png');
-  background-attachment: scroll;
-  background-position: left top;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-26%20at%209.05.16%20AM.png');
+  background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-26%20at%209.05.16%20AM.png');
+  background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-26%20at%209.05.16%20AM.png');
+  background-image:         linear-gradient(0deg, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-26%20at%209.05.16%20AM.png');
+  background-attachment: scroll, scroll;
+  background-position: left top, 300px top;
+  background-clip: border-box, border-box;
+  background-origin: padding-box, padding-box;
+  background-size: auto auto, 100% auto;
+  background-repeat: repeat, no-repeat;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
      -moz-box-orient: vertical;
      -moz-box-direction: normal;
-  background-blend-mode: normal;
+  background-blend-mode: multiply, normal;
 }
 
 .container.sd-two-cols {
@@ -1559,16 +1574,19 @@ label.label {
   width: 600px;
   height: 300px;
   border-radius: 25px;
-  background-color: #50b1a9;
-  background-image: url('../Graphic%20Layout%20Grid%20Plate%201.png');
-  background-attachment: scroll;
-  background-position: left top;
-  background-clip: border-box;
-  background-origin: padding-box;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-26%20at%209.02.18%20AM.png');
+  background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-26%20at%209.02.18%20AM.png');
+  background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-26%20at%209.02.18%20AM.png');
+  background-image:         linear-gradient(0deg, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 100%), url('../Screen%20Shot%202020-06-26%20at%209.02.18%20AM.png');
+  background-attachment: scroll, scroll;
+  background-position: left top, 300px top;
+  background-clip: border-box, border-box;
+  background-origin: padding-box, padding-box;
+  background-size: auto auto, 100% auto;
+  background-repeat: repeat, no-repeat;
 
-  background-blend-mode: normal;
+  background-blend-mode: multiply, normal;
 }
 
 .container.container-7 {
@@ -1614,6 +1632,24 @@ label.label {
   background-repeat: no-repeat;
 
   background-blend-mode: normal;
+}
+
+.container.contact-large-quote {
+  width: 100%;
+  background-color: #3e3e3e;
+  background-image: url('../img/josh-nuttall-286507.jpg');
+  background-attachment: fixed;
+  background-position: right center;
+  background-clip: border-box;
+  background-origin: padding-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-blend-mode: multiply;
+}
+
+.container.footer-contact-info {
+  background-color: #1e1e1e;
 }
 
 .link-container.sample-60-advanced-bt {
@@ -1819,7 +1855,7 @@ a.glyph.font-icon-link-1 {
   padding-bottom: 5px;
   padding-left: 15px;
   min-height: 40px;
-  color: #50b1a9;
+  color: #f2f2f2;
   font-size: 30px;
   line-height: 35px;
 }
@@ -2719,10 +2755,6 @@ div.responsive-picture.picture-1:hover {
     background-color: #fff;
   }
 
-  .container.footer-contact-info.surrounding-padding-col {
-    background-color: #1e1e1e;
-  }
-
   .container.subnav-container {
     position: relative;
     z-index: 101;
@@ -2733,10 +2765,6 @@ div.responsive-picture.picture-1:hover {
     display:         flex;
     margin-right: auto;
     margin-left: auto;
-  }
-
-  .container.contact-large-quote.surrounding-padding-col {
-    min-height: 50%;
   }
 
   .container.container-1 {
@@ -2775,6 +2803,14 @@ div.responsive-picture.picture-1:hover {
 
   .container.full-width-col.sample-4 {
     background-size: cover;
+  }
+
+  .container.contact-large-quote {
+    min-height: 50%;
+  }
+
+  .container.footer-contact-info {
+    background-color: #1e1e1e;
   }
 
   .link-container.sample-60-advanced-bt {
@@ -3017,7 +3053,7 @@ div.responsive-picture.picture-1:hover {
     background-position: left top, center -120px;
     background-clip: border-box, border-box;
     background-origin: padding-box, padding-box;
-    background-size: auto auto, 75% 155%;
+    background-size: auto auto, 70% 160%;
     background-repeat: repeat, no-repeat;
 
     background-blend-mode: normal, normal;
@@ -3105,5 +3141,14 @@ div.responsive-picture.picture-1:hover {
 
   .container.welcome-section {
     background-color: #dcdcdc;
+    background-image: none;
+    background-attachment: scroll;
+    background-position: left top;
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-size: 0 0;
+    background-repeat: no-repeat;
+
+    background-blend-mode: normal;
   }
 }
