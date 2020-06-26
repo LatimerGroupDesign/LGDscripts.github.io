@@ -435,6 +435,7 @@ a.link-button.button-link-3 {
   right: -10%;
   margin-top: 0;
   padding: 11px;
+  width: 130px;
   border: .0625rem solid #f3f3f3;
   background-color: rgba(0, 0, 0, .5);
   color: #dcdcdc;
@@ -552,8 +553,8 @@ label.label {
   background-position: center top;
   background-clip: border-box;
   background-origin: padding-box;
-  background-size: cover;
-  background-repeat: repeat;
+  background-size: auto auto;
+  background-repeat: no-repeat;
   opacity: .96;
 
   -webkit-flex-wrap: wrap;
@@ -1271,17 +1272,25 @@ label.label {
 }
 
 .container.subnav-container {
+  position: static;
+  top: 0;
   z-index: 10;
   display: none;
+  visibility: visible;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-align: center;
+  overflow: hidden;
   padding-top: 40px;
   padding-bottom: 20px;
   max-width: 100%;
   background-color: #070707;
   box-shadow: none;
+  -webkit-transform: scaleX(1);
+     -moz-transform: scaleX(1);
+       -o-transform: scaleX(1);
+          transform: scaleX(1);
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1291,6 +1300,9 @@ label.label {
   -webkit-align-items: center;
      -moz-box-align: center;
           align-items: center;
+  -webkit-transform-style: flat;
+     -moz-transform-style: flat;
+          transform-style: flat;
 }
 
 .container.welcome-section {
@@ -1513,7 +1525,11 @@ label.label {
 }
 
 .container.container-9 {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
@@ -1567,7 +1583,14 @@ label.label {
 }
 
 .container.container-15 {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:    -moz-box;
+  display: -ms-flexbox;
+  display:         flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 10px;
   margin-right: 10px;
   margin-left: 10px;
@@ -1587,6 +1610,10 @@ label.label {
   background-repeat: repeat, no-repeat;
 
   background-blend-mode: multiply, normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
 }
 
 .container.container-7 {
@@ -1858,6 +1885,10 @@ a.glyph.font-icon-link-1 {
   color: #f2f2f2;
   font-size: 30px;
   line-height: 35px;
+}
+
+div.responsive-picture.picture-2 {
+  width: 3%;
 }
 
 button.button:hover {
@@ -3032,6 +3063,20 @@ div.responsive-picture.picture-1:hover {
     display: block;
   }
 
+  a.link-button.button-link-2 {
+    width: 130px;
+    background-color: #363636;
+  }
+
+  a.link-button.button-link-3 {
+    width: 130px;
+    background-color: #363636;
+  }
+
+  a.link-button.button-link-1 {
+    background-color: #363636;
+  }
+
   /* Layout Elements */
 
   .container.full-width-col.sample-4 {
@@ -3128,15 +3173,18 @@ div.responsive-picture.picture-1:hover {
     padding-top: 5vw;
     padding-bottom: 3vw;
     background-color: #000;
-    background-image: url('../Script%20Menu%20Backplate.png');
-    background-attachment: scroll;
-    background-position: center top;
-    background-clip: border-box;
-    background-origin: padding-box;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%), url('../Writing%20Code%20Animation.gif');
+    background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%), url('../Writing%20Code%20Animation.gif');
+    background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%), url('../Writing%20Code%20Animation.gif');
+    background-image:         linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%), url('../Writing%20Code%20Animation.gif');
+    background-attachment: scroll, fixed;
+    background-position: left top, left top;
+    background-clip: border-box, border-box;
+    background-origin: padding-box, padding-box;
+    background-size: auto auto, cover;
+    background-repeat: repeat, repeat;
 
-    background-blend-mode: normal;
+    background-blend-mode: normal, normal;
   }
 
   .container.welcome-section {
@@ -3150,5 +3198,29 @@ div.responsive-picture.picture-1:hover {
     background-repeat: no-repeat;
 
     background-blend-mode: normal;
+  }
+
+  .container.container-15 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+       -moz-box-orient: vertical;
+       -moz-box-direction: normal;
+  }
+
+  .container.container-9 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
   }
 }
