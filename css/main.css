@@ -3053,7 +3053,7 @@ div.responsive-picture.picture-1:hover {
     background-position: left top, center -120px;
     background-clip: border-box, border-box;
     background-origin: padding-box, padding-box;
-    background-size: auto auto, 70% 160%;
+    background-size: auto auto, 70% 150%;
     background-repeat: repeat, no-repeat;
 
     background-blend-mode: normal, normal;
