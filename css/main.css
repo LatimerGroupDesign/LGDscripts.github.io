@@ -264,18 +264,6 @@ blockquote.user-review-quote {
   line-height: 1.55;
 }
 
-blockquote.contact-large-quote-text {
-  padding-top: 0;
-  padding-right: 0;
-  padding-left: 0;
-  color: #404040;
-  text-indent: -15px;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-family: 'Anton', cursive;
-  line-height: 1;
-}
-
 blockquote.contact-large-quote-text.light {
   width: 700px;
   color: #959595;
@@ -286,6 +274,18 @@ blockquote.contact-large-quote-text.light {
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
           align-self: auto;
+}
+
+blockquote.contact-large-quote-text {
+  padding-top: 0;
+  padding-right: 0;
+  padding-left: 0;
+  color: #404040;
+  text-indent: -15px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: 'Anton', cursive;
+  line-height: 1;
 }
 
 a.link-text {
@@ -622,6 +622,16 @@ a.link-button.button-link-3 {
   -ms-flex-pack: center;
   padding: 10vw 40px;
   background-color: #000;
+  background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%), url('../Particle%20Background.jpeg');
+  background-image:    -moz-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%), url('../Particle%20Background.jpeg');
+  background-image:      -o-linear-gradient(bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%), url('../Particle%20Background.jpeg');
+  background-image:         linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%), url('../Particle%20Background.jpeg');
+  background-attachment: scroll, fixed;
+  background-position: left top, left center;
+  background-clip: border-box, border-box;
+  background-origin: padding-box, padding-box;
+  background-size: auto auto, auto auto;
+  background-repeat: repeat, repeat;
 
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
@@ -630,6 +640,7 @@ a.link-button.button-link-3 {
   -webkit-justify-content: center;
      -moz-box-pack: center;
           justify-content: center;
+  background-blend-mode: normal, normal;
 }
 
 .container.sample-60-buttons-cont.twelve-hundred-centered-cont {
@@ -956,18 +967,6 @@ a.link-button.button-link-3 {
   -webkit-align-items: flex-end;
      -moz-box-align: end;
           align-items: flex-end;
-}
-
-.container.contact-large-quote-cont.six-hundred-centered-cont {
-  -ms-flex-align: start;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
-
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-     -moz-box-align: start;
-          align-items: flex-start;
 }
 
 .container.technical-info-table-cell {
@@ -1484,6 +1483,21 @@ a.link-button.button-link-3 {
   background-blend-mode: normal;
 }
 
+.container.contact-large-quote-cont.six-hundred-centered-cont {
+  position: relative;
+  top: 6%;
+  right: auto;
+  -ms-flex-align: start;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+          align-items: flex-start;
+}
+
 .container.contact-large-quote {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1492,15 +1506,15 @@ a.link-button.button-link-3 {
   display:         flex;
   -ms-flex-align: center;
   width: 100%;
-  height: 400px;
+  height: 500px;
   background-color: #3e3e3e;
-  background-image: url('../Quote%20Backplate%20Dark.png');
+  background-image: url('../Quote%20Backplate%20Dark%20Long.png');
   background-attachment: scroll;
-  background-position: center center;
+  background-position: center top;
   background-clip: border-box;
   background-origin: padding-box;
   background-size: auto auto;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 
   background-blend-mode: normal;
   -webkit-align-self: auto;
@@ -1513,92 +1527,6 @@ a.link-button.button-link-3 {
   -webkit-align-items: center;
      -moz-box-align: center;
           align-items: center;
-}
-
-.container.container-18 {
-  background-color: #000;
-}
-
-.container.container-19 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display:    -moz-box;
-  display: -ms-flexbox;
-  display:         flex;
-  margin-right: 15px;
-  margin-left: 15px;
-  padding-top: 0;
-  padding-right: 0;
-  padding-left: 0;
-  width: 23%;
-}
-
-.container.container-20 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display:    -moz-box;
-  display: -ms-flexbox;
-  display:         flex;
-  -ms-flex-pack: center;
-  -ms-flex-align: center;
-  margin-bottom: 0;
-  max-width: none;
-  width: 100%;
-
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-     -moz-box-align: center;
-          align-items: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
-          align-content: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-          justify-content: center;
-}
-
-.container.container-21 {
-  margin-right: 15px;
-  margin-left: 15px;
-  padding-top: 0;
-  padding-right: 0;
-  padding-left: 0;
-  width: 23%;
-}
-
-.container.container-22 {
-  margin-right: 15px;
-  margin-left: 15px;
-  padding-right: 0;
-  padding-left: 0;
-  width: 23%;
-}
-
-.container.container-23 {
-  margin-right: 15px;
-  margin-left: 15px;
-  padding-right: 0;
-  padding-left: 0;
-  width: 23%;
-}
-
-.container.container-17 {
-  width: 100%;
-  height: 600px;
-  background-color: #000;
-  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 90%), url('../Diagonal%20White-Black.png');
-  background-image:    -moz-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 90%), url('../Diagonal%20White-Black.png');
-  background-image:      -o-linear-gradient(top, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 90%), url('../Diagonal%20White-Black.png');
-  background-image:         linear-gradient(180deg, rgba(255, 255, 255, .5) 0%, rgba(0, 0, 0, 1) 90%), url('../Diagonal%20White-Black.png');
-  background-attachment: scroll, scroll;
-  background-position: left top, center center;
-  background-clip: border-box, border-box;
-  background-origin: padding-box, padding-box;
-  background-size: auto auto, cover;
-  background-repeat: repeat, no-repeat;
-
-  background-blend-mode: normal, normal;
 }
 
 .link-container.sample-60-advanced-bt {
@@ -1614,6 +1542,7 @@ a.link-button.button-link-3 {
   margin-top: 20px;
   padding: 20px 20px 13px;
   width: 100%;
+  height: 390px;
   background-color: #fff;
   -webkit-transition-timing-function: ease-out;
      -moz-transition-timing-function: ease-out;
@@ -1676,6 +1605,7 @@ div.responsive-picture.sample-60-img {
   margin-right: 20px;
   margin-bottom: 20px;
   max-width: 250px;
+  width: 100%;
 }
 
 span.glyph.sample-60-arrow-icon {
@@ -1764,15 +1694,6 @@ a.glyph.font-icon-link-1 {
 
 div.responsive-picture.picture-2 {
   width: 3%;
-}
-
-div.responsive-picture.picture-3 {
-  max-width: none;
-  height: 100%;
-}
-
-div.responsive-picture.picture-3 > picture {
-  height: 100%;
 }
 
 div.responsive-picture.picture-1:hover {
@@ -1958,13 +1879,13 @@ div.responsive-picture.picture-1:hover {
     font-size: 20px;
   }
 
+  blockquote.contact-large-quote-text.light {
+    font-size: 50px;
+  }
+
   blockquote.contact-large-quote-text {
     text-indent: -26px;
     font-size: 28px;
-  }
-
-  blockquote.contact-large-quote-text.light {
-    font-size: 50px;
   }
 
   a.link-text.nav-item {
@@ -2434,13 +2355,13 @@ div.responsive-picture.picture-1:hover {
     font-size: 22px;
   }
 
+  blockquote.contact-large-quote-text.light {
+    font-size: 60px;
+  }
+
   blockquote.contact-large-quote-text {
     text-indent: -30px;
     font-size: 2.5vw;
-  }
-
-  blockquote.contact-large-quote-text.light {
-    font-size: 60px;
   }
 
   a.link-text.nav-item {
@@ -2556,12 +2477,6 @@ div.responsive-picture.picture-1:hover {
     border-top: .0625rem dotted #272727;
   }
 
-  .container.contact-large-quote-cont.six-hundred-centered-cont {
-    margin-left: 10vw;
-    max-width: 50%;
-    width: auto;
-  }
-
   .container.technical-info-table-cell {
     padding: 30px 20px;
   }
@@ -2629,6 +2544,12 @@ div.responsive-picture.picture-1:hover {
 
   .container.full-width-col.sample-4 {
     background-size: cover;
+  }
+
+  .container.contact-large-quote-cont.six-hundred-centered-cont {
+    margin-left: 10vw;
+    max-width: 50%;
+    width: auto;
   }
 
   .container.contact-large-quote {
