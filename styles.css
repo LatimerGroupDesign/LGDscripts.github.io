@@ -11,7 +11,7 @@ body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-align: center;
 	width: 1770px; 
-	height: 980;
+	height: 980px;
 }
 
 /* Logo ———————————————————————————————————————————————————————————————————— */
@@ -169,6 +169,13 @@ body {
 	letter-spacing: 5px;
 	margin-top: 90%;
 	white-space: nowrap;
+}
+
+#scriptImg {
+	/* position */
+    transform: rotate(-45deg);
+    margin-left: 0px;
+    margin-top: 0px;
 }
 
 .board2 {
