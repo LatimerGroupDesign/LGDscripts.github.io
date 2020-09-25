@@ -16,10 +16,12 @@ timer = setInterval(function() {
 		num = 0;
 	}
 
-	document.body.style.transform = 'scale(' + document.documentElement.clientWidth/1770 + ')';
-	document.body.style['-o-transform'] = 'scale(' + document.documentElement.clientWidth/1770 + ')';
-	document.body.style['-webkit-transform'] = 'scale(' + document.documentElement.clientWidth/1770 + ')';
-	document.body.style['-moz-transform'] = 'scale(' + document.documentElement.clientWidth/1770 + ')';
+	location.hash = "divid";
+
+	document.body.style.transform = 'scale(' + document.documentElement.clientWidth/1792 + ')';
+	document.body.style['-o-transform'] = 'scale(' + document.documentElement.clientWidth/1792 + ')';
+	document.body.style['-webkit-transform'] = 'scale(' + document.documentElement.clientWidth/1792 + ')';
+	document.body.style['-moz-transform'] = 'scale(' + document.documentElement.clientWidth/1792 + ')';
 
 	/*
 	document.body.style.transform = 'scaleX(' + document.documentElement.clientWidth/screen.width + ') scaleY(' + document.documentElement.clientHeight/screen.height + ')';
