@@ -10,10 +10,8 @@ body {
 	/* global text properties */
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-align: center;
-	position: relative;
-	overflow: hidden;
-	width: 1800px; 
-	height: 1000px; 
+	width: 1770px; 
+	height: 980;
 }
 
 /* Logo ———————————————————————————————————————————————————————————————————— */
