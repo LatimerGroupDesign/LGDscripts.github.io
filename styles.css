@@ -10,7 +10,7 @@ body {
 	/* global text properties */
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	text-align: center;
-	overflow-x: hidden;
+	overflow: hidden;
 	width: 1792px; 
 	height: 1018px;
 	position: absolute;
