@@ -5,67 +5,83 @@
 
 <head>
   <title>Latimer Group Design</title>
+  <meta name="description" content="LGD Advising Webstie">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Sergio Perez-Valentin">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <script src="./index.js"></script>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <div id="credits">
-    <p id="authorIntro">CREATED BY</p>
-    <p id="authorName">SERGIO PEREZ-VALENTIN</p>
-  </div>
-
   <div id="headerBorder"></div>
   <div id="headertext">
     <p id="headerTextTop">LATIMER GROUP</p>
     <p id="headerTextBottom">DESIGN</p>
   </div>
-
-  <div class="board1" id="board1Bottom">
-    <p id="board1Text">SCRIPTS</p>
-  </div>
-  <div class="board1" id="board1Top">
-    <img id="scriptImg" src="./assets/ADA_Formatter.png" width="250" height="250">
+  <div id="headerLine"></div>
+  <div id="quote">
+    <p>“It's supposed to be automatic, but actually you have to push this button.”</p>
+    <p> — John Brunner</p>
   </div>
 
-  <div class="board2" id="board2Bottom">
-    <p id="board2Text">PANEL</p>
+  <div class="scriptBoard" id="scriptBoardBottom">
+    <p id="scriptBoardText">SCRIPTS</p>
   </div>
-  <div class="board2" id="board2Top">
-    <img id="panelImg" src="./assets/Panel_Icon.png" width="200" height="200">
+  <div class="scriptBoard" id="scriptBoardTop" onclick="contentChange('./scriptInfographics.html')">
+    <img id="scriptImg" src="./assets/ADA_Formatter_Grey.png" width="250" height="250" onclick="scriptPageChange()">
   </div>
 
-  <div class="board3" id="board3Bottom">
-    <p id="board3Text">GITHUB</p>
+  <div class="panelBoard" id="panelBoardBottom">
+    <p id="panelBoardText">PANEL</p>
   </div>
-  <a href="https://github.com/LatimerGroupDesign">
-    <div class="board3" id="board3Top">
-      <img id="githubLogo" src="./assets/githubLogo.png" width="150" height="150">
-    </div>
-  </a>
+  <div class="panelBoard" id="panelBoardTop">
+    <img id="panelImg" src="./assets/Panel_Icon_Grey.png" width="200" height="200">
+  </div>
 
-  <div class="board4" id="board4Bottom">
-    <p id="board4Text">TIPS </p>
+  <div class="procedureBoard" id="procedureBoardBottom">
+    <p id="procedureBoardText">PROCEDURE</p>
   </div>
-  <a href="https://helpx.adobe.com/illustrator/using/default-keyboard-shortcuts.html">
-    <div class="board4" id="board4Top">
+  <div class="procedureBoard" id="procedureBoardTop">
+    <img id="procedureIcon" src="./assets/procedureIcon.png" width="150" height="150">
+  </div>
+
+  <div class="tipsBoard" id="tipsBoardBottom">
+    <p id="tipsBoardText">TIPS </p>
+  </div>
+  <a href="https://helpx.adobe.com/illustrator/using/default-keyboard-shortcuts.html" target="_blank">
+    <div class="tipsBoard" id="tipsBoardTop">
       <img id="tipsImg" src="./assets/tipsImg.png" width="80" height="100">
     </div>
   </a>
 
-  <div class="board5" id="board5Bottom"></div>
-  <div class="board5" id="board5Top">
-    <img id="profileImg" src="./assets/profile.png" width="60" height="60">
-  </div>
+  <div class="githubBoard" id="githubBoardBottom"></div>
+  <a href="https://github.com/LatimerGroupDesign" target="_blank">
+    <div class="githubBoard" id="githubBoardTop">
+      <img id="githubLogo" src="./assets/githubLogo.png" width="60" height="60">
+    </div>
+  </a>
 
-  <div class="board6" id="board6Bottom">
-    <p id="board6Text">FOLLOW US</p>
+  <div class="mediaBoard" id="mediaBoardBottom">
+    <p id="mediaBoardText">FOLLOW US</p>
   </div>
-  <a href="https://www.facebook.com/pg/asiLatimerGroup/about/">
-    <div class="board6" id="board6Top">
+  <a href="https://www.facebook.com/pg/asiLatimerGroup/about/" target="_blank">
+    <div class="mediaBoard" id="mediaBoardTop">
       <img id="facebookLogo" src="./assets/facebookLogo.png" width="50" height="50">
     </div>
+  </a>
+
+  <div class="profileBoard" id="profileBoardTop" onclick="profilePopup()">
+    <img id="profileIcon" src="./assets/profile.png" width="50" height="50" onclick="profilePopup()">
+  </div>
+
+  <a href="https://www.asisignagelatimergroup.com/" target="_blank">
+    <div class="logoBoard" id="logoBoardTop"></div>
+    <div class="logo" id="logoTop"></div>
+    <div class="logo" id="logoMiddle"></div>
+    <div class="logo" id="logoBottom"></div>
   </a>
 
   <div class="plate" id="plate1"></div>
@@ -74,17 +90,15 @@
   <div class="plate" id="plate4"></div>
   <div class="plate" id="plate5"></div>
   <div class="plate" id="plate6"></div>
-  <div class="plate" id="plate7"></div>
+  <div class="plate" id="plate7">
+    <p id="profileCloseButton" onclick="profilePopdown()">×</p>
+    <p id="profileTextInformation">This website and the following content is maintined by Sergio Perez-Valentin. If you have any quesitons, please contact me at sergiopv02@gmail.com</p>
+  </div>
   <div class="plate" id="plate8"></div>
   <div class="plate" id="plate9"></div>
   <div class="plate" id="plate10"></div>
-  <div class="plate" id="plate11"></div>
-  <a href="https://www.asisignagelatimergroup.com/">
-    <div class="plate" id="plate12"></div>
-    <div class="logo" id="logoTop"></div>
-    <div class="logo" id="logoMiddle"></div>
-    <div class="logo" id="logoBottom"></div>
-  </a>
+  
+  <script> </script>
 
 </body>
 
